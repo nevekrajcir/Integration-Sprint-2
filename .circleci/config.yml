@@ -1,7 +1,5 @@
 #Neve Krajcir
 #The following code is a math quiz using variables and numbers to solve the questions.
-    #I was emailing Kat back and forth about the use of the input function, and was unable to figure out how to use it in a way to let the function run through on
-    #its own, because of this the code requires you to hit the enter key to continue it.
 print("Hello!, welcome to the quiz.")
 print("Basic calculations and problems will have to be solved," + "\nBegin.")
     #The string operator "+" is being used to connect the statements together.
