@@ -6,7 +6,7 @@ print("Hello!, welcome to the quiz.")
 print("Basic calculations and problems will have to be solved," + "\nBegin.")
     #The string operator "+" is being used to connect the statements together.
     #\n tells the computer to start the words after it on a second line.
-print("Solve the following problems using the given variables.", end = "\n")
+print("Solve the following problems using the given variables.")
     #The "end =" function is telling the line to end and restart on a new line.
 print("x = 4" + " " + "y = 10" + " " + "z = 2", end = "\n")
 print("Question 1.", end = "\n")
