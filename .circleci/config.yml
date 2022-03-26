@@ -1,26 +1,137 @@
-# Use the latest 2.1 version of CircleCI pipeline process engine.
-# See: https://circleci.com/docs/2.0/configuration-reference
-version: 2.1
+#Neve Krajcir
+#The following code is a math quiz using variables and numbers to solve the questions.
+    #I was emailing Kat back and forth about the use of the input function, and was unable to figure out how to use it in a way to let the function run through on
+    #its own, because of this the code requires you to hit the enter key to continue it.
+print("Hello!, welcome to the quiz.")
+print("Basic calculations and problems will have to be solved," + "\nBegin.")
+    #The string operator "+" is being used to connect the statements together.
+    #\n tells the computer to start the words after it on a second line.
+print("Solve the following problems using the given variables.", end = "\n")
+    #The "end =" function is telling the line to end and restart on a new line.
+print("x = 4" + " " + "y = 10" + " " + "z = 2", end = "\n")
+print("Question 1.", end = "\n")
+print("What does x + y = ?")
+x = 4
+y = 10
+z = 2
+addition = input(x + y)
+    #I am using the plus sign "+" to tell the computer to add the variables x and y.
+print("Question 2.\nWhat does z - y = ?", sep = " ")
+    #The "sep =" function is telling the computer to seperate the words in quotes with a space.
+subtraction = input(z - y)
+    #The minus sign "-" is to tell the computer to subtract the 2 variables.
+print("Question 3.\nWhat does y % x = ?")
+modolus = input(y % x)
+    #The percent sign "%" is telling the computer to find the remiander of the 2 numbers.
+print("Solve the following problems using the given variables.")
+print("a = 25" + " " + "b = 100" + " " + "c = 5")
+print("Question 4." , end = "\n")
+print("What does b / a = ?")
+a = 25
+b = 100
+c = 3
+division = input(b / a)
+    #The "/" sign is telling the computer to divide the 2 variables.
+print("Question 5.", end = "\n")
+print("What does a // c = ?")
+floorDivision = input(a // c)
+    #The "//" sign is telling the computer to divide the 2 variables, but exclude the remainder.
+print("Solve the following problems using the given variables.")
+print("n = 6" + " " + "k = 22" + " " + "m = 2")
+print("Question 6.", end = "\n")
+print("What does n", "m = ?", sep = "**")
+    #The "sep =" function is telling the computer to seperate the words under quotes by a "**", the exponential operator.
+n = 6
+k = 22
+m = 2
+exponential = input(n ** m)
+    #The "**" sign is telling the computer to raise the variable n to the power of the variable m, exponentials.
+print("Question 7", end = "\n")
+print("What does k * n = ?")
+multiplication = input(k * n)
+    #The "*" sign is telling the computer to multiply the variables.
+print("Solve the question using the variables.")
+print("x = 37 " * 2)
+    #The string operator "*" tells the computer to repeat the string, and write x = 37 twice.
+print("Question 8.", end = "\n")
+print("What is x * x = ?")
+x = 37
+multiplication = input(x * x)
+end = print("You have now completed the quiz,", "Have a great day!", sep = " \n")
 
-# Define a job to be invoked later in a workflow.
-# See: https://circleci.com/docs/2.0/configuration-reference/#jobs
-jobs:
-  say-hello:
-    # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
-    # See: https://circleci.com/docs/2.0/configuration-reference/#docker-machine-macos-windows-executor
-    docker:
-      - image: cimg/base:stable
-    # Add steps to the job
-    # See: https://circleci.com/docs/2.0/configuration-reference/#steps
-    steps:
-      - checkout
-      - run:
-          name: "Say hello"
-          command: "echo Hello, World!"
+print("Welcome to Quiz 2.")
+print("Question 1.")
+print("Is 2 + 6 > 3?")
+leftSide = 8
+rightSide = 3
+if leftSide > rightSide:
+    print("True.")
+#If is used to create a condition, your telling the program to print True, if the condition is met.
+else:
+#Else is used if the If condition is not passed.
+        leftSide < rightSide
+        print("False.")
+print("Question 2.")
+print("Is x >= 17? If x = 13.")
+#The >= sign is saying x is greater than or equal to 17.
+x = 13
+while x >= 17:
+#A while loop is a continuous loop until the conditions are no longer met.
+    print(x)
+else:
+    print("False.")
+print("Question 3.")
+print("What are the multiples of 5, from 0 to 20?")
+for x in range(0,25,5):
+#A for loop is when you know the amount of inputs.
+#In is used to state the variable in the loop is in the range sequence.
+#Range is a function talking about numbers, the first number is your starting point, the second is the last
+#number, and the third number is the multiples.
+     if x % 5 == 0:
+        print(x)
+print("Question 4.")
+print("Is x + y = 18? If x = 10 and y = 10.")
+x = 10
+y = 10
+if x + y == 18:
+#The == sign means the left is equal to the right
+    print("True.")
+elif x + 9 != 18:
+#The != means the leftside is not equal to the right.
+#The elif function is used instead of else, and combines if and else aka elif.
+    print("False.")
+print("Question 5.")
+print("Is this statement true? 2 < x < 20, if x = 12.")
+x = 12
+if x > 2 and x < 20:
+#And is used for conditions, and the variable must meet both conditions to be true.
+    print("True.")
+elif x > 2:
+    not x < 20
+#The < sign is to say x is less than 20.
+#Not is used to say the variable can not be a certain value, otherwise not all requirements are met.
+    print("Not all requirements meant.")
+else:
+    x > 2 or x < 20
+#Or is used to say that the variable has to be one or the other to be false.
+    print("False.")
+print("Question 6.\nPart a.")
+print("Choose a number, and add it to x + y.\nx = 2 y = 5")
+def number(num):
+#By using def your are defining what number is, and giving it a parameter
+    x = 2
+    y = 5
+    input(x + y + num)
+number(27)
+#This is defining number
+print("Part b.")
+print("Find the chosen number from part a.")
+x = 2
+y = 5
+total = 34
+z = x + y
+total-=z
+#The -= subtracts z from the total and makes it the new total.
+#This is a short cut operator for total = total - z.
+print(total)
 
-# Invoke jobs via workflows
-# See: https://circleci.com/docs/2.0/configuration-reference/#workflows
-workflows:
-  say-hello-workflow:
-    jobs:
-      - say-hello
